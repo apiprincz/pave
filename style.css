@@ -333,7 +333,7 @@ white-space: nowrap;
     font-family: sofia pro;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
+    /* font-size: 19px; */
     
     line-height: 21px;
     color:#296A7E;
@@ -583,6 +583,8 @@ line-height: 22px;
     outline: none;
     border-radius: 40px;
 }
+
+
 .footer-flex {
     display: flex;
     align-items: center;
@@ -815,8 +817,41 @@ font-weight: 500;
 .footer-bg img {
     width: 100%;
 }
+.swiper-container {
+    height: 40vh;
+}
+.swiper-wrapper {
+    margin:  0 auto;
+}
 
+.swiper-slide {
+    width: 200px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 
+}
+.swiper-slide img{
+    width: 40%;
+
+}
+.swiper-slide img.narrow{
+    width: 40%;
+
+}
+@media screen and (min-width:1500px){
+    
+ .corporate {
+     width: 21%;
+ }
+ .footer-bg, .card-logo {
+     width: 13%;
+ }
+ .direction-form {
+     height: 70vh;
+ }
+
+ }
 @media screen and (max-width:1020px){
     
  .card {
@@ -932,6 +967,9 @@ font-weight: 500;
         font-size: 21px;
         margin-top: 3px;
     }
+    .swiper-container {
+        height: 53vh;
+    }
 }
 
 
@@ -998,11 +1036,24 @@ font-weight: 500;
 .icons > div {
     margin-right: 10px;
 }
-
+.colored{
+    font-size: 16px;
+}
+.description {
+    font-size: 14px;
+}
+.card h3, .card h2 {
+    font-size: 17px;
+}
+.mid-content  {
+    margin-top: 20px;
+}
 }
 
 @media screen and (max-width:425px){
-    
+    .mid-content h1 {
+        font-size: 22px;
+    }
     .main-footer {
         padding-left: 0;
         padding-right: 0;
@@ -1032,6 +1083,21 @@ font-weight: 500;
     a:link {
         font-size: 12px;
     }
+    .swiper-slide img{
+        width: 75%;
+    
+    }
+    .swiper-slide img.narrow{
+        width: 65%;
+    
+    }
+    .title, .title h2,.contact h1,.solution-container h2,.section-text {
+        font-size: 20px;
+    }
+    .colored span {
+        font-size: 25px;
+    }
+
 }
 @media screen and (max-width:375px){
     

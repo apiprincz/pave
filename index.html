@@ -15,6 +15,8 @@
 
     <link rel="stylesheet" href="./font.css">
     <!-- endbuild -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 
     <title>Pave.ng</title>
@@ -170,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card card-box">
                     <div>
                         <div class="card-img">
                             <img src="./images/money-bag-with-dollar-symbol 1.png" alt="" class="clockz_">
@@ -192,7 +194,7 @@
     </section>
     <section>
         <div class="solution-container">
-            <h2>The Solution</h2>
+            <h2  class="title">The Solution</h2>
             <div class="solution-content" style="display:flex;">
                 <div class="web-dev">
                     <img src="./images/undraw_web_developer_p3e5 (1) 1.png" alt="">
@@ -284,14 +286,14 @@
         <h2 class="title">Our Clients</h2>
 
        
-        <div class="customer-logos swiper-container">
+        <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide" style="width: 200px;">
                     <img src="./images/Dangote.jpg" alt="">
     
                 </div>
                 <div class="swiper-slide">
-                    <img src="./images/cus 2.png" alt="">
+                    <img src="./images/cus 2.png" alt="" class="narrow">
                 </div>
                 <div class="swiper-slide">
                     <img src="./images/cus 1.png" alt="">
@@ -372,7 +374,7 @@
                         </div>
                         <ul class="navigation">
                            
-                            <li> <a href="index.html" id="Home">Home</a> </li>
+                            <li> <a href="index.html" >Home</a> </li>
                             <li> <a href="about.html" id="About">About Us</a> </li>
                             <li> <a href="#" id="Contact">Contact Us</a> </li>
                             
@@ -421,114 +423,96 @@
 
     </script>
 
+<script>
+
+    var slideInTop = {
+        distance: '30%',
+        origin: 'top',
+        viewFactor: .5,
+        opacity: 0,
+        duration: 1900,
+    };
+    var slideInLeft = {
+        distance: '30%',
+        origin: 'left',
+        viewFactor: .5,
+        opacity: 0,
+        duration: 1900,
+    };
+    var slideInUp = {
+        distance: '70%',
+        origin: 'top',
+        viewFactor: .5,
+        opacity: 0,
+        duration: 1900,
+    };
+    var slideInLeftCustomised = {
+        distance: '100%',
+        origin: 'left',
+        viewFactor: .5,
+        opacity: 0,
+        duration: 1900,
+    };
+    var slideInLeftCustomisedRight = {
+        distance: '100%',
+        origin: 'right',
+        viewFactor: .5,
+        opacity: 0,
+        duration: 1900,
+    };
+    var scaleUp = {
+        scale: 0,
+        viewFactor: .5,
+        opacity: 0,
+        duration: 1900,
+    };
+    var slideInDown = {
+        distance: '100%',
+        origin: 'top',
+        viewFactor: .5,
+        opacity: 0,
+        duration: 1800,
+        delay: 200
+    };
+
+    ScrollReveal({ reset: false }).reveal(".card", slideInUp);
+    ScrollReveal({ reset: false }).reveal(".card-box", slideInLeft);
+    ScrollReveal({ reset: false }).reveal(".big-text ", slideInLeft);
+    ScrollReveal({ reset: false }).reveal(".card-title ", slideInDown);
+    ScrollReveal({ reset: false }).reveal(".title ", slideInDown);
+    ScrollReveal({ reset: false }).reveal(".contact h1", slideInDown);
+    ScrollReveal({ reset: false }).reveal(".footer-form ", slideInDown);
+    ScrollReveal({ reset: false }).reveal(".blue-text", slideInDown);
+    ScrollReveal({ reset: false }).reveal(".colored", slideInDown);
+    ScrollReveal({ reset: false }).reveal(".mid-content h2", scaleUp);
+
+
+
+</script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
     <script>
-
-        var scaleUp = {
-            scale: 0,
-            viewFactor: .5,
-            duration: 1200,
-        };
-
-        ScrollReveal().reveal(".section__", scaleUp);
-
-
-        var slideInLeft = {
-            distance: '100%',
-            origin: 'right',
-            viewFactor: .5,
-            opacity: 0,
-            duration: 1200,
-            delay: 200
-        };
-
-        // ScrollReveal().reveal(".about__container__animation", slideInLeft);
-
-        var fadedIn = {
-            scale: 0,
-            viewFactor: .3,
-            duration: 1500
-        };
-
-        ScrollReveal({ reset: false }).reveal(".direction-form", fadedIn);
-
-
-        var slideInDown = {
-            distance: '50%',
-            origin: 'top',
-            viewFactor: 0,
-            opacity: 0,
-            duration: 1200,
-            delay: 200
-        };
-        ScrollReveal({ reset: false }).reveal(".section__", fadedIn);
-
-
-        var slideInDown = {
-            distance: '50%',
-            origin: 'top',
-            viewFactor: 0,
-            opacity: 0,
-            duration: 1200,
-            delay: 200
-        };
-        ScrollReveal({ reset: false }).reveal(".solution-text", fadedIn);
-
-
-        var slideInDown = {
-            distance: '50%',
-            origin: 'top',
-            viewFactor: 0,
-            opacity: 0,
-            duration: 1200,
-            delay: 200
-        };
-        ScrollReveal({ reset: false }).reveal(".example-body", fadedIn);
-
-
-        var slideInDown = {
-            distance: '50%',
-            origin: 'top',
-            viewFactor: 0,
-            opacity: 0,
-            duration: 1200,
-            delay: 200
-        };
-        ScrollReveal({ reset: false }).reveal(".pave-works-content", fadedIn);
-
-
-        var slideInDown = {
-            distance: '50%',
-            origin: 'top',
-            viewFactor: 0,
-            opacity: 0,
-            duration: 1200,
-            delay: 200
-        };
-        ScrollReveal({ reset: false }).reveal(".customer-info", fadedIn);
-
-
-        var slideInDown = {
-            distance: '50%',
-            origin: 'top',
-            viewFactor: 0,
-            opacity: 0,
-            duration: 1200,
-            delay: 200
-        };
-
-        // ScrollReveal({ reset: false }).reveal(".die", slideInDown);
-
-        var slideInUp = {
-            distance: '50%',
-            origin: 'bottom',
-            viewFactor: 1,
-            opacity: 0,
-            duration: 1200,
-            delay: 200
-        };
-
-        ScrollReveal().reveal("btn--white", slideInUp);
-
+        var mySwiper = new Swiper ('.swiper-container', {
+            slidesPerView: 3,
+            // slidesPerColumn: 2,
+            spaceBetween: 30,
+            autoplay: {
+            	delay: 2500,
+            disableOnInteraction: false,
+            },
+                observer: true,
+                observeParents: true,
+                loop: true,
+                pagination: {
+          el: '.swiper-pagination',
+                clickable: true,
+                
+            
+        }
+    
+        // Navigation arrows
+        
+      })
     </script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
