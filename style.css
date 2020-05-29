@@ -140,25 +140,25 @@ button{
 
 .gotopbtn {
     position: fixed;
-    width: 72px;
-    height: 52px;
+    width: 40px;
+    /* height: 52px; */
     /* color: #296A7E; */
     background: rgb(241, 241, 241);
     bottom: 50px;
     box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.644);
     right: 50px;
     text-decoration: none;
-  
     z-index: 100;
     list-style: none;
     text-align: center;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     line-height: 50px;
-    border-radius: 100px;
+    padding: 16px 5px;
+    border-radius: 50%;
     transition-duration: 0.6s;
     transform: translateX(-20%);
     -moz-transition-timing-function: ease-in-out 0.8s;
-    -moz-transition-duration:0.6s;
+    -moz-transition-duration: 0.6s;
     transition-timing-function: ease-in-out 0.8s;
     /* transition-property: background-color, color; */
     /* color: white; */
@@ -822,6 +822,9 @@ font-weight: 500;
 }
 .swiper-wrapper {
     margin:  0 auto;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 .swiper-slide {
@@ -919,7 +922,7 @@ font-weight: 500;
     left: 0;
    }
    .big-text {
-       line-height: 170px;
+       line-height: 127px;
    }
    .card-container {
        padding-right: 0;
