@@ -38,12 +38,12 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="about">
+                    <a href="" class="about about-js">
                         About Us
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#" class="contact contact-js">
                         <button class="button">Contact us</button>
                     </a>
                 </li>
@@ -188,7 +188,7 @@
             <img src="./images/city.png" alt="">
         </div>
     </section>
-    <section class="about-section">
+    <section class="about-section"  >
         <div class="solution-container">
             <h2  class="title">The Solution</h2>
             <div class="solution-content" style="display:flex;">
@@ -303,21 +303,21 @@
     </div>
     <footer>
         <div class="footer-content">
-            <div class="footer-form">
+            <div class="footer-form contact-section">
                 <form action="#" class="contact">
                     <h1>Contact Us</h1>
                     <div class="txtb">
-                        <input type="text">
+                        <input type="text" class="input-box">
                         <span data-placeholder="Name"></span>
                     </div>
 
                     <div class="txtb">
-                        <input type="text">
+                        <input type="text"  class="input-box">
                         <span data-placeholder="E-mail Address"></span>
                     </div>
 
                     <div class="txtb">
-                        <input type="tel">
+                        <input type="tel"  class="input-box">
                         <span data-placeholder="Mobile"></span>
                     </div>
                     <h3 class="bottom-font">Preferred mode of communication</h3>
@@ -370,9 +370,9 @@
                         </div>
                         <ul class="navigation">
                            
-                            <li> <a href="index.html" >Home</a> </li>
-                            <li> <a href="about.html" id="About">About Us</a> </li>
-                            <li> <a href="#" id="Contact">Contact Us</a> </li>
+                            <li> <a href="#" >Home</a> </li>
+                            <li> <a href="#" class="about about-js">About Us</a> </li>
+                            <li> <a href="#" class="contact contact-js">Contact Us</a> </li>
                             
                         </ul>
                         <div class="web-logo">
@@ -399,25 +399,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./jquery.waypoints.min.js"></script>
 
-    <!-- <script>
-        const scrollDown = document.querySelector('.about')
-        const elmnt = document.querySelector('.solution-texts')
+    <script>
+        const aboutScroll = document.querySelectorAll('.about-js')
+        const  contactScroll = document.querySelectorAll('.contact-js')
 
-        scrollDown.addEventListener("click", (e) => {
+        const aboutTarget = document.querySelector('.about-section')
+        const contactTarget = document.querySelector('.contact-section')
+        for (let index = 0; index < aboutScroll.length; index++) {
+
+            aboutScroll[index].addEventListener("click", (e) => {
             e.preventDefault();
-            elmnt.scrollIntoView()
+            aboutTarget.scrollIntoView({block:'start'})
+                
 
         });
-        const scrollDown = document.querySelector('.button')
-        const elmnt = document.querySelector('.footer-content')
-
-        scrollDown.addEventListener("click", (e) => {
+    }
+        for (let index = 0; index < contactScroll.length; index++) {
+            contactScroll[index].addEventListener("click", (e) => {
             e.preventDefault();
-            elmnt.scrollIntoView()
+            contactTarget.scrollIntoView()
 
         });
+    
+    }
+      
+        
+        
+       
 
-    </script> -->
+    </script>
+
+    <script>
+        const inputFields = document.querySelectorAll('.input-box')
+
+        for (let i = 0; i < inputFields.length; i++) {
+            inputFields[i].addEventListener('focus', function () {
+
+                Console.log(inputFields[i])
+                
+            })
+            
+        }
+    </script>
 
 <script>
 
@@ -486,12 +509,7 @@
 
 </script>
 
-<!-- <script>
-    $("about").click(function() {
-    var target = document.getElementById("about-section");
-    target.parentNode.scrollTop = target.offsetTop;    
-});
-</script> -->
+
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
     <script>

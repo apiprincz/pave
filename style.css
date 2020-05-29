@@ -638,11 +638,7 @@ a, #Home{
     font-size: 14px;
     font-weight: 500;
 }
-#About{
 
-letter-spacing: 1px;
-font-weight: 500;
-}
 #Contact{
    
     letter-spacing: 1px;
@@ -794,6 +790,9 @@ font-weight: 500;
     padding: 0px 10px;
     white-space: nowrap;
 }
+.navigation li a.about {
+    color: white;
+}
 .insta, .twitter {
     width: 20px;
 }
@@ -914,6 +913,7 @@ font-weight: 500;
        
    .direction-form {
        flex-direction: column;
+       height: 124vh;
    }
    .card-logo {
     position: absolute;
