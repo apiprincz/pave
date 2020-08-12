@@ -240,7 +240,7 @@ color: #1A5061;
     background-repeat: no-repeat;
     background-size: cover;
     height: -webkit-fill-available;
-    /* height: 98vh; */
+    
 }
 .card-container {
     display: flex;
@@ -815,14 +815,18 @@ a, #Home{
 .footer-bg img {
     width: 100%;
 }
-.swiper-container {
+/* .swiper-container {
     height: 40vh;
-}
+} */
+
+
+
 .swiper-wrapper {
     margin:  0 auto;
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center; 
+    padding-bottom: 40px;
 }
 
 .swiper-slide {
@@ -853,6 +857,12 @@ a, #Home{
  }
 
  }
+@media screen and (max-width:1250px){
+    .direction-form {
+        padding: 10px 0px;
+        height: 60vh;
+    }
+}
 @media screen and (max-width:1020px){
     
  .card {
@@ -912,7 +922,7 @@ a, #Home{
        
    .direction-form {
        flex-direction: column;
-       height: 124vh;
+       /* height: 124vh; */
    }
    .card-logo {
     position: absolute;
@@ -939,6 +949,9 @@ a, #Home{
    .colored  {
        font-size: 20px;
    }
+   /* .mid-class-content {
+       top: 160px;
+   } */
    .colored span {
        font-size: 40px;
    }
@@ -959,7 +972,7 @@ a, #Home{
         padding-bottom: 0;
     }
     .main-footer {
-        padding-top: 216px;
+        padding-top: 348px;
         width: 100%;
     }
     .subscription-text {
@@ -969,8 +982,16 @@ a, #Home{
         font-size: 21px;
         margin-top: 3px;
     }
-    .swiper-container {
+    /* .swiper-container {
         height: 53vh;
+    } */
+    .footer-form{
+        transform: translateY(-40px)!important;
+        padding: 16px;
+        
+    }
+    .swiper-wrapper {
+        padding-bottom: 58px;
     }
 }
 
@@ -1010,6 +1031,7 @@ a, #Home{
  .section-text {
      font-size: 30px;
  }
+
 }
 
 @media screen and (max-width:512px){
@@ -1056,6 +1078,9 @@ a, #Home{
     .mid-content h1 {
         font-size: 22px;
     }
+    .mid-content {
+        margin-top: 30px;
+    }
     .main-footer {
         padding-left: 0;
         padding-right: 0;
@@ -1068,6 +1093,9 @@ a, #Home{
     }
     .footer-content {
         padding: 0px 19px 30px;
+    }
+    .footer-form {
+        width: 80%;
     }
     .insta, .twitter {
         width: 14px;
@@ -1121,10 +1149,13 @@ a, #Home{
     .bottom-font {
         font-size: 12px;
     }
+    .pave-logo img {
+        width: 60%;
+    }
 
 }
 
-}
+
 
 
 
